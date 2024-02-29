@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+				initial-scale=1.0"
+    />
+    <title>User Polls</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Quiz Poll App</a>
+    </nav>
+    <div id="quiz-container">
+      <div id="next-button" style="text-align: center">
+        <button id="previous" class="btn btn-primary">Previous</button>
+        <button id="next"  class="btn btn-primary"> Next</button>
+      </div>
+    </div>
+
+   
+     
+    <script>
+      let questions = [
+        {
+          id: "Question7",
+          question: "How many interns would increase the productivity level of your department:",
+          options: [
+            "1-4",
+            "More than 4.",
+            "None."
+          ],
+          results: {
+            "1-4": 0,
+            "More than 4.": 0,
+            "None.": 0
+          },
+        },
+        {
+          id: "Question4",
+          question: "Our firm should provide more funding opportunities for outside training:",
+          options: [
+            "Agree.",
+            "Disagree.",
+            "Strongly agree."
+          ],
+          results: {
+            "Agree.": 0,
+            "Disagree.": 0,
+            "Strongly agree.": 0
+          },
+        },
+      ];
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>

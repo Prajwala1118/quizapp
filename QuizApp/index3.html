@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+				initial-scale=1.0"
+    />
+    <title>User Polls</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Quiz Poll App</a>
+    </nav>
+    <div id="quiz-container">
+      <div id="next-button" style="text-align: center">
+        <button id="previous" class="btn btn-primary">Previous</button>
+      </div>
+    </div>
+
+   
+    <script>
+      let questions = [
+        {
+          id: "Question5",
+          question: "Would you attend a holiday party for your department:",
+          options: [
+            "Yes",
+            "No.",
+            "Maybe.",
+          ],
+          results: {
+            "Yes": 0,
+            "No.": 0,
+            "Maybe.": 0,
+          },
+        },
+      ];
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
